@@ -1,0 +1,11 @@
+<ion-view cache-view="false" view-title="Map">
+  <ion-content>
+	   	{{map.center.latitude}}, {{map.center.longitude}}
+	<div map-lazy-load="https://maps.google.com/maps/api/js" style="width:600px; height: 400px"
+	  map-lazy-load-params="{{googleMapsUrl}}">
+	  <ng-map style="display:block; width: 100%; height:100%;">
+	   	<marker position="{{map.center.latitude}}" />
+	  </ng-map>
+	</div>
+  </ion-content>
+</ion-view>

@@ -7,10 +7,16 @@
         "files": {}
     },
     "installed_plugins": {
+        "cordova-plugin-appavailability": {
+            "PACKAGE_NAME": "com.ionicframework.yabamobile725573"
+        },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.ionicframework.yabamobile725573"
         },
         "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.yabamobile725573"
+        },
+        "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.ionicframework.yabamobile725573"
         },
         "cordova-plugin-splashscreen": {
@@ -23,12 +29,6 @@
             "PACKAGE_NAME": "com.ionicframework.yabamobile725573"
         },
         "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "com.ionicframework.yabamobile725573"
-        },
-        "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.ionicframework.yabamobile725573"
-        },
-        "cordova-plugin-appavailability": {
             "PACKAGE_NAME": "com.ionicframework.yabamobile725573"
         }
     },

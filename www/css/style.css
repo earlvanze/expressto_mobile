@@ -1,1 +1,37 @@
-/* Empty. Add your own CSS if you like */
+.angular-google-map {
+    position: relative;
+    width:100%;
+    height:90vh;
+}
+
+.angular-google-map-container {
+    position: relative;
+    width:100%;
+    height:90vh;
+}
+
+
+.bar.bar-loading {
+  display: block;
+  height: 25vh;
+  position: absolute !important;
+  top: 48px !important;
+  width: 100% !important;
+  text-align: center;
+  padding: 0;
+  line-height: 20px;
+
+  /* transition 'sliding down' (check below)*/
+  -webkit-transition: 200ms all;
+}
+
+/* make loading bar slide up/down */
+.bar-loading.ng-enter,
+.bar-loading.ng-leave.ng-leave-active {
+  opacity: 0;
+
+}
+.bar-loading.ng-enter.ng-enter-active,
+.bar-loading.ng-leave {
+  opacity: 1;
+}
