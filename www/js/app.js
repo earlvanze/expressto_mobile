@@ -5,8 +5,10 @@
 // the 2nd parameter is an array of 'requires'
 angular.module('expressto',
   ['ionic',
+  'uiGmapgoogle-maps',
+  'nemLogging',
   'ngMap', 
-  "expressto.controller", 
+  'expressto.controller', 
   'ngCordova'
   ])
 
@@ -44,7 +46,13 @@ angular.module('expressto',
 
 })
 
-.config( function($httpProvider) {
+.config( function($httpProvider, uiGmapGoogleMapApiProvider) {
+  uiGmapGoogleMapApiProvider.configure({
+      key: 'AIzaSyBmnmTCsEUdpzgrHX7WW2uNcjF-dtQxY8I',
+      v: '3.20',
+      libraries: ''
+  });
+
   //$httpProvider.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded; charset=UTF-8";
   $httpProvider.defaults.headers.post["Content-Type"] = "application/json; charset=UTF-8";
   $httpProvider.defaults.useXDomain = true;
